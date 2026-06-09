@@ -3,21 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ishimwe Xavion - Personal Portfolio</title>
+    <title>Ishimwe François Xavier - Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+    <!-- Animated Background -->
+    <div class="animated-background">
+        <div class="gradient-blob blob-1"></div>
+        <div class="gradient-blob blob-2"></div>
+        <div class="gradient-blob blob-3"></div>
+    </div>
+
     <!-- Navigation -->
     <nav class="navbar">
         <div class="container">
-            <div class="logo">Ishimwe Xavion</div>
+            <div class="logo">
+                <span class="logo-icon">✨</span>
+                <span class="logo-text">ISHIMWE</span>
+            </div>
             <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#cv">CV</a></li>
-                <li><a href="#links">Links</a></li>
-                <li><a href="#calendar">Calendar</a></li>
-                <li><a href="#weather">Weather</a></li>
+                <li><a href="#home" data-link>Home</a></li>
+                <li><a href="#about" data-link>About</a></li>
+                <li><a href="#experience" data-link>Experience</a></li>
+                <li><a href="#education" data-link>Education</a></li>
+                <li><a href="#skills" data-link>Skills</a></li>
+                <li><a href="#contact" data-link>Contact</a></li>
             </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
     </nav>
 
@@ -25,77 +42,611 @@
     <section id="home" class="hero">
         <div class="container">
             <div class="hero-content">
-                <h1>Welcome to My Portfolio</h1>
-                <p>Ishimwe Xavion</p>
-                <p class="subtitle">Explore my CV, connect through my links, and discover more about me</p>
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span class="text-gradient">Ishimwe François Xavier</span>
+                    </h1>
+                    <p class="hero-subtitle">Managing Director | Program Manager | Full-Stack Developer</p>
+                    <p class="hero-description">
+                        Strategic leader transforming ideas into reality with code, management excellence, and community advocacy. 
+                        Based in Rwanda, building solutions that drive meaningful impact.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn btn-primary">Get in Touch</a>
+                        <a href="https://linktr.ee/etchebbeari" target="_blank" class="btn btn-secondary">
+                            <i class="fas fa-link"></i> All Links
+                        </a>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://github.com/Etchebbeari" target="_blank" class="social-link" title="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="mailto:etchebbeari@gmail.com" class="social-link" title="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                        <a href="https://linktr.ee/etchebbeari" target="_blank" class="social-link" title="Linktree">
+                            <i class="fas fa-link"></i>
+                        </a>
+                        <a href="tel:+250788123456" class="social-link" title="Phone">
+                            <i class="fas fa-phone"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="floating-card card-1">
+                        <span class="card-icon">💼</span>
+                        <p>Leadership</p>
+                    </div>
+                    <div class="floating-card card-2">
+                        <span class="card-icon">💻</span>
+                        <p>Development</p>
+                    </div>
+                    <div class="floating-card card-3">
+                        <span class="card-icon">🚀</span>
+                        <p>Innovation</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- CV Section -->
-    <section id="cv" class="section cv-section">
+    <!-- About Section -->
+    <section id="about" class="about">
         <div class="container">
-            <h2>My CV</h2>
-            <div class="cv-container">
-                <div class="cv-item">
-                    <h3>Education</h3>
-                    <p>Your education details go here</p>
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <div class="title-underline"></div>
+            </div>
+
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        I'm a dynamic professional with expertise spanning strategic management, community development, 
+                        and software engineering. My career reflects a commitment to excellence and a passion for 
+                        leveraging technology to drive real impact in communities.
+                    </p>
+                    <p>
+                        Currently serving as Managing Director at Fresh Deliveryia, I oversee strategic operations while 
+                        maintaining active roles in program management and financial operations. My background encompasses 
+                        leadership, advocacy, technical development, and construction supervision—always with innovation as 
+                        the catalyst for positive change.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <h3>5+</h3>
+                            <p>Years Experience</p>
+                        </div>
+                        <div class="stat">
+                            <h3>25+</h3>
+                            <p>Projects Led</p>
+                        </div>
+                        <div class="stat">
+                            <h3>4</h3>
+                            <p>Languages</p>
+                        </div>
+                        <div class="stat">
+                            <h3>10+</h3>
+                            <p>Certifications</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="cv-item">
-                    <h3>Experience</h3>
-                    <p>Your work experience goes here</p>
-                </div>
-                <div class="cv-item">
-                    <h3>Skills</h3>
-                    <p>Your skills go here</p>
-                </div>
-                <div class="cv-item">
-                    <h3>Certifications</h3>
-                    <p>Your certifications go here</p>
+                <div class="about-visual">
+                    <div class="tech-stack">
+                        <div class="tech-item">
+                            <i class="fab fa-html5"></i>
+                            <span>HTML</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fab fa-css3-alt"></i>
+                            <span>CSS</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fab fa-js"></i>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fab fa-java"></i>
+                            <span>Java</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fab fa-python"></i>
+                            <span>Python</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fas fa-cogs"></i>
+                            <span>Kotlin</span>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <a href="#" class="btn-download">Download Full CV</a>
         </div>
     </section>
 
-    <!-- Links Section -->
-    <section id="links" class="section links-section">
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
         <div class="container">
-            <h2>Connect With Me</h2>
-            <div class="links-container">
-                <a href="https://linktr.ee/etchebbeari" target="_blank" class="link-card">
-                    <span class="link-icon">🔗</span>
-                    <p>Linktree - All My Links</p>
-                </a>
-                <a href="https://github.com/Etchebbeari" target="_blank" class="link-card">
-                    <span class="link-icon">💻</span>
-                    <p>GitHub</p>
-                </a>
-                <a href="mailto:your-email@example.com" class="link-card">
-                    <span class="link-icon">📧</span>
-                    <p>Email Me</p>
-                </a>
+            <div class="section-header">
+                <h2 class="section-title">Professional Journey</h2>
+                <div class="title-underline"></div>
+            </div>
+
+            <div class="experience-timeline">
+                <!-- Fresh Deliveryia -->
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Managing Director</h3>
+                            <span class="timeline-date">
+                                <i class="far fa-calendar"></i> March 2025 – Present
+                            </span>
+                        </div>
+                        <p class="timeline-company">
+                            <i class="fas fa-building"></i> Fresh Deliveryia | 
+                            <i class="fas fa-map-marker-alt"></i> Musanze, Rwanda
+                        </p>
+                        <p class="timeline-industry">Fresh Food Delivery</p>
+                        <ul class="timeline-list">
+                            <li>Overseeing strategic operations in fresh food delivery and daily supply management</li>
+                            <li>Led establishment and growth of reliable distribution network</li>
+                            <li>Ensuring quality service and operational excellence across all operations</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- MCBO Program Manager -->
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Program Manager</h3>
+                            <span class="timeline-date">
+                                <i class="far fa-calendar"></i> Feb 2024 – Oct 2025
+                            </span>
+                        </div>
+                        <p class="timeline-company">
+                            <i class="fas fa-building"></i> MCBO | 
+                            <i class="fas fa-map-marker-alt"></i> Musanze, Nyabihu & Burera
+                        </p>
+                        <ul class="timeline-list">
+                            <li><strong>Program Oversight:</strong> Lead program implementation across 25 sectors (12 in Nyabihu, 8 in Musanze, 5 in Burera)</li>
+                            <li><strong>Monitoring & Evaluation:</strong> Assess program impact, progress, and effectiveness</li>
+                            <li><strong>Good Governance Advocacy:</strong> Spearhead "Tubategamatwi" Advocacy Model for community empowerment</li>
+                            <li><strong>Reporting & Compliance:</strong> Prepare detailed reports on achievements and financial performance</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- MCBO Financial Assistant -->
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Financial Assistant</h3>
+                            <span class="timeline-date">
+                                <i class="far fa-calendar"></i> Oct 2025 – Present
+                            </span>
+                        </div>
+                        <p class="timeline-company">
+                            <i class="fas fa-building"></i> MCBO
+                        </p>
+                        <ul class="timeline-list">
+                            <li>Reconcile cash accounts and update cash book regularly</li>
+                            <li>Ensure weekly and monthly cash count procedures</li>
+                            <li>Assist Financial Officer with report scanning and filing</li>
+                            <li>Process all payments through cash receipt and payment vouchers</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Muvelo Project -->
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Construction Supervisor</h3>
+                            <span class="timeline-date">
+                                <i class="far fa-calendar"></i> September – October 2023
+                            </span>
+                        </div>
+                        <p class="timeline-company">
+                            <i class="fas fa-building"></i> Muvelo Project | 
+                            <i class="fas fa-map-marker-alt"></i> Multiple Locations, Rwanda
+                        </p>
+                        <ul class="timeline-list">
+                            <li>Supervised installation of cooking stoves for students</li>
+                            <li>Coordinated efforts among multiple schools</li>
+                            <li>Ensured on-time project completion and resource management</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Calendar Section -->
-    <section id="calendar" class="section calendar-section">
+    <!-- Education Section -->
+    <section id="education" class="education">
         <div class="container">
-            <h2>Calendar</h2>
-            <div class="calendar-widget">
-                <div id="calendar"></div>
+            <div class="section-header">
+                <h2 class="section-title">Education</h2>
+                <div class="title-underline"></div>
+            </div>
+
+            <div class="education-grid">
+                <div class="education-item">
+                    <div class="education-badge">🎓</div>
+                    <h3>Bachelor of Technology</h3>
+                    <p class="education-field">Highway Technology</p>
+                    <p class="education-school">RP Musanze College, Rwanda</p>
+                    <p class="education-date">
+                        <i class="far fa-calendar"></i> Graduation: May 2026
+                    </p>
+                    <span class="education-tag">In Progress</span>
+                </div>
+
+                <div class="education-item">
+                    <div class="education-badge">📜</div>
+                    <h3>Advanced Diploma</h3>
+                    <p class="education-field">Highway Technology</p>
+                    <p class="education-school">RP Kigali College, Rwanda</p>
+                    <p class="education-date">
+                        <i class="far fa-calendar"></i> Graduated: May 2025
+                    </p>
+                    <span class="education-tag">Completed</span>
+                </div>
+
+                <div class="education-item">
+                    <div class="education-badge">📚</div>
+                    <h3>Diploma</h3>
+                    <p class="education-field">Road Construction</p>
+                    <p class="education-school">ESTB, Rwanda</p>
+                    <p class="education-date">
+                        <i class="far fa-calendar"></i> Graduated: 2019
+                    </p>
+                    <span class="education-tag">Completed</span>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Weather Section -->
-    <section id="weather" class="section weather-section">
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
         <div class="container">
-            <h2>Current Weather</h2>
-            <div class="weather-widget">
-                <div id="weather-info" class="weather-info">
-                    <p>Loading weather...</p>
+            <div class="section-header">
+                <h2 class="section-title">Skills & Technologies</h2>
+                <div class="title-underline"></div>
+            </div>
+
+            <!-- Technical Tools -->
+            <div class="skills-section">
+                <h3 class="skills-category-title">
+                    <i class="fas fa-tools"></i> Technical Tools
+                </h3>
+                <div class="skills-list">
+                    <span class="skill-badge">IntelliJ IDEA</span>
+                    <span class="skill-badge">Android Studio</span>
+                    <span class="skill-badge">AutoCAD Civil 3D</span>
+                    <span class="skill-badge">Geo 5</span>
+                    <span class="skill-badge">Plaxis 2D & 3D</span>
+                    <span class="skill-badge">Microsoft Office</span>
+                    <span class="skill-badge">Libre Office</span>
+                    <span class="skill-badge">Google Docs</span>
+                </div>
+            </div>
+
+            <!-- Programming Languages -->
+            <div class="skills-section">
+                <h3 class="skills-category-title">
+                    <i class="fas fa-code"></i> Programming Languages
+                </h3>
+                <div class="skills-list">
+                    <span class="skill-badge primary">HTML</span>
+                    <span class="skill-badge primary">CSS</span>
+                    <span class="skill-badge primary">JavaScript</span>
+                    <span class="skill-badge primary">Java</span>
+                    <span class="skill-badge primary">Python</span>
+                    <span class="skill-badge primary">Kotlin</span>
+                </div>
+            </div>
+
+            <!-- Software & Applications -->
+            <div class="skills-section">
+                <h3 class="skills-category-title">
+                    <i class="fas fa-cube"></i> Software & Applications
+                </h3>
+                <div class="skills-list">
+                    <span class="skill-badge">QuickBooks</span>
+                    <span class="skill-badge">MuseScore</span>
+                    <span class="skill-badge">Sibelius Student</span>
+                    <span class="skill-badge">Inkscape</span>
+                    <span class="skill-badge">GIMP</span>
+                    <span class="skill-badge">Git</span>
+                </div>
+            </div>
+
+            <!-- Business & Management -->
+            <div class="skills-section">
+                <h3 class="skills-category-title">
+                    <i class="fas fa-chart-line"></i> Business & Management
+                </h3>
+                <div class="skills-list">
+                    <span class="skill-badge">Project Management</span>
+                    <span class="skill-badge">Strategic Planning</span>
+                    <span class="skill-badge">Financial Management</span>
+                    <span class="skill-badge">Data Analytics</span>
+                    <span class="skill-badge">Monitoring & Evaluation</span>
+                    <span class="skill-badge">Reporting & Compliance</span>
+                </div>
+            </div>
+
+            <!-- Soft Skills -->
+            <div class="skills-section">
+                <h3 class="skills-category-title">
+                    <i class="fas fa-heart"></i> Soft Skills
+                </h3>
+                <div class="skills-list">
+                    <span class="skill-badge">Leadership</span>
+                    <span class="skill-badge">Communication</span>
+                    <span class="skill-badge">Problem Solving</span>
+                    <span class="skill-badge">Creativity</span>
+                    <span class="skill-badge">Work Ethic</span>
+                    <span class="skill-badge">Customer Service</span>
+                    <span class="skill-badge">Interpersonal Skills</span>
+                    <span class="skill-badge">Adaptability</span>
+                </div>
+            </div>
+
+            <!-- Creative Skills -->
+            <div class="skills-section">
+                <h3 class="skills-category-title">
+                    <i class="fas fa-music"></i> Creative & Music
+                </h3>
+                <div class="skills-list">
+                    <span class="skill-badge">Piano Teaching</span>
+                    <span class="skill-badge">Music Composition</span>
+                    <span class="skill-badge">Choir Conducting</span>
+                    <span class="skill-badge">Website Development</span>
+                </div>
+            </div>
+
+            <!-- Languages -->
+            <div class="skills-section">
+                <h3 class="skills-category-title">
+                    <i class="fas fa-globe"></i> Languages
+                </h3>
+                <div class="skills-list">
+                    <span class="skill-badge language">
+                        <i class="fas fa-star"></i> Kinyarwanda (Native)
+                    </span>
+                    <span class="skill-badge language">
+                        <i class="fas fa-star"></i> English (Native)
+                    </span>
+                    <span class="skill-badge language">
+                        <i class="fas fa-star-half-alt"></i> French (Intermediate)
+                    </span>
+                    <span class="skill-badge language">
+                        <i class="fas fa-star-half-alt"></i> Swahili (Intermediate)
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="certifications">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Certifications & Achievements</h2>
+                <div class="title-underline"></div>
+            </div>
+
+            <div class="certifications-grid">
+                <div class="cert-card">
+                    <div class="cert-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3>AI Augmented Professional Development Skills</h3>
+                    <p class="cert-issuer">
+                        <i class="fas fa-building"></i> ALX
+                    </p>
+                    <p class="cert-date">
+                        <i class="far fa-calendar"></i> Oct 2024 • 8 weeks
+                    </p>
+                    <div class="cert-details">
+                        <span class="cert-gpa">
+                            <i class="fas fa-check-circle"></i> GPA: 4.0
+                        </span>
+                    </div>
+                </div>
+
+                <div class="cert-card">
+                    <div class="cert-icon">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <h3>Data Analysis Fundamentals</h3>
+                    <p class="cert-issuer">
+                        <i class="fas fa-building"></i> Udacity
+                    </p>
+                    <p class="cert-date">
+                        <i class="far fa-calendar"></i> Feb 13, 2025 • 8 weeks
+                    </p>
+                    <div class="cert-details">
+                        <span class="cert-gpa">
+                            <i class="fas fa-check-circle"></i> GPA: 4.0
+                        </span>
+                    </div>
+                </div>
+
+                <div class="cert-card">
+                    <div class="cert-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Programming Fundamentals</h3>
+                    <p class="cert-issuer">
+                        <i class="fas fa-building"></i> Udacity
+                    </p>
+                    <p class="cert-date">
+                        <i class="far fa-calendar"></i> June 2025 • 8 weeks
+                    </p>
+                    <div class="cert-details">
+                        <span class="cert-gpa">
+                            <i class="fas fa-check-circle"></i> GPA: 4.0
+                        </span>
+                    </div>
+                </div>
+
+                <div class="cert-card">
+                    <div class="cert-icon">
+                        <i class="fab fa-android"></i>
+                    </div>
+                    <h3>Android Developer Fundamentals</h3>
+                    <p class="cert-issuer">
+                        <i class="fas fa-building"></i> Udacity
+                    </p>
+                    <p class="cert-date">
+                        <i class="far fa-calendar"></i> June 2025
+                    </p>
+                    <div class="cert-details">
+                        <span class="cert-gpa">
+                            <i class="fas fa-check-circle"></i> GPA: 4.0
+                        </span>
+                    </div>
+                </div>
+
+                <div class="cert-card">
+                    <div class="cert-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <h3>Teacher Development Certificate</h3>
+                    <p class="cert-issuer">
+                        <i class="fas fa-building"></i> EF
+                    </p>
+                    <p class="cert-date">
+                        <i class="far fa-calendar"></i> May 2026
+                    </p>
+                    <div class="cert-details">
+                        <span class="cert-gpa">
+                            <i class="fas fa-certificate"></i> Certified
+                        </span>
+                    </div>
+                </div>
+
+                <div class="cert-card">
+                    <div class="cert-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Additional Professional Development</h3>
+                    <p class="cert-issuer">
+                        <i class="fas fa-building"></i> Various Institutions
+                    </p>
+                    <p class="cert-date">
+                        <i class="far fa-calendar"></i> 2023 - 2026
+                    </p>
+                    <div class="cert-details">
+                        <span class="cert-gpa">
+                            <i class="fas fa-star"></i> 10+ Certifications
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Calendar & Weather Section -->
+    <section id="utilities" class="utilities">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Calendar & Weather</h2>
+                <div class="title-underline"></div>
+            </div>
+            
+            <div class="utilities-grid">
+                <div class="utility-card">
+                    <div class="utility-header">
+                        <h3><i class="far fa-calendar"></i> Calendar</h3>
+                    </div>
+                    <div id="calendar" class="calendar-widget"></div>
+                </div>
+
+                <div class="utility-card">
+                    <div class="utility-header">
+                        <h3><i class="fas fa-cloud"></i> Current Weather</h3>
+                    </div>
+                    <div id="weather-info" class="weather-widget">
+                        <p><i class="fas fa-spinner fa-spin"></i> Loading weather...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Let's Connect</h2>
+                <div class="title-underline"></div>
+            </div>
+
+            <div class="contact-content">
+                <p class="contact-description">
+                    I'm always interested in hearing about new projects, opportunities, and collaborations. 
+                    Feel free to reach out through any of these channels!
+                </p>
+
+                <div class="contact-links">
+                    <a href="https://linktr.ee/etchebbeari" target="_blank" class="contact-link">
+                        <span class="link-icon">🔗</span>
+                        <span>All Links</span>
+                        <span class="link-arrow"><i class="fas fa-arrow-right"></i></span>
+                    </a>
+                    <a href="mailto:etchebbeari@gmail.com" class="contact-link">
+                        <span class="link-icon">📧</span>
+                        <span>Email</span>
+                        <span class="link-arrow"><i class="fas fa-arrow-right"></i></span>
+                    </a>
+                    <a href="https://github.com/Etchebbeari" target="_blank" class="contact-link">
+                        <span class="link-icon">💻</span>
+                        <span>GitHub</span>
+                        <span class="link-arrow"><i class="fas fa-arrow-right"></i></span>
+                    </a>
+                    <a href="tel:+250788123456" class="contact-link">
+                        <span class="link-icon">📞</span>
+                        <span>Phone</span>
+                        <span class="link-arrow"><i class="fas fa-arrow-right"></i></span>
+                    </a>
+                </div>
+
+                <div class="contact-info">
+                    <div class="info-item">
+                        <span class="info-icon"><i class="fas fa-map-marker-alt"></i></span>
+                        <div>
+                            <p><strong>Location</strong></p>
+                            <p>Musanze, Rwanda</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-icon"><i class="fas fa-globe"></i></span>
+                        <div>
+                            <p><strong>Languages</strong></p>
+                            <p>Kinyarwanda • English • French • Swahili</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="social-links-bottom">
+                    <a href="https://github.com/Etchebbeari" target="_blank" class="social-link-bottom">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="mailto:etchebbeari@gmail.com" class="social-link-bottom">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="https://linktr.ee/etchebbeari" target="_blank" class="social-link-bottom">
+                        <i class="fas fa-link"></i>
+                    </a>
+                    <a href="tel:+250788123456" class="social-link-bottom">
+                        <i class="fas fa-phone"></i>
+                    </a>
                 </div>
             </div>
         </div>
@@ -104,7 +655,12 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2026 Ishimwe Xavion. All rights reserved.</p>
+            <div class="footer-content">
+                <p>&copy; 2026 Ishimwe François Xavier. Crafted with <span class="heart">❤️</span> and code.</p>
+                <div class="footer-links">
+                    <a href="#home"><i class="fas fa-arrow-up"></i> Back to Top</a>
+                </div>
+            </div>
         </div>
     </footer>
 
